@@ -1,0 +1,167 @@
+@import "mixin";
+@import "variable";
+
+@media  (max-width: 600px) { 
+  
+//     *{
+//        padding:0;
+//        margin:0;
+//        box-sizing: border-box;
+//    }
+   
+    body{
+        font-family: $font-family;
+      
+    }
+
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+      transition: 0.3s;
+      width: 60%;
+      border-radius: 5px;
+      margin: auto;
+    }
+    
+    .card:hover {
+      box-shadow: 8px 8px 16px 16px rgba(0,0,0,0.2);
+    }
+
+    h2{
+        padding:10px;
+    }
+    
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 2px 16px;
+      
+}
+label {
+  font-weight: bold;
+  font-size:20px;
+  margin-bottom: 20px;
+  
+}
+input[type="text"] {
+ 
+ 
+  width: 95%;
+  padding:10px;
+  /* margin: 3px; */
+  margin-bottom: 20px ;
+  font-size: 15px;
+  border: 2px solid rgb(231, 229, 229);
+  margin-top: 5px;
+  &:focus {
+    border:solid #01d5ff;
+  }
+}
+
+button{
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    padding: 12px ;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px ;
+    margin-top: 8px;
+
+    &:hover{
+    background-color:  #01d5ff;
+    cursor: pointer;
+    }
+}
+}
+
+
+
+@media  (min-width: 700px) {
+
+
+
+body {
+  font-family: $font-family;
+}
+.card {
+  
+  width: 30%;
+  /* height: %; */
+  border-radius: rem(5);
+  margin :3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover {
+  box-shadow: 8px 8px 16px 16px rgba(0,0,0,0.2);
+}
+
+h2{
+    padding:10px;
+    float: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 2px 16px;
+  
+}
+label {
+font-weight: bold;
+font-size:20px;
+margin-bottom: 20px;
+
+}
+
+input[type="text"] {
+
+
+width: 95%;
+padding:10px;
+/* margin: 3px; */
+margin-bottom: 20px ;
+font-size: 15px;
+border: 2px solid rgb(231, 229, 229);
+margin-top: 5px;
+}
+input:focus {
+border:solid #01d5ff;
+}
+
+button{
+    background-color:#4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px ;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px ;
+    margin-top: 8px;
+
+    &:hover{
+    background-color:  #01d5ff;
+    cursor: pointer;
+    }
+  }
+}
+
